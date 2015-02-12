@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Incorporate Bootstrap framework</title>
+	<meta charset="utf-8">
+
+	 <!-- Latest compiled and minified CSS -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/content.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+	<div class="jumbotron">
+		<img src="assets/images/logo.png" alt="logo" class="img-rounded pull-left" height="140" width="140">
+		<h1>Something goes here</h1>
+		<p>This is some text</p>
+	</div>
+</div>
+
+	<div class="row">
+		<div class="col-md-8 col-lg-9" style="background-color:white">
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation"><a href="#monday" aria-controls="monday-meals" role="tab" data-toggle="tab">Monday</a></li>
+					<li role="presentation"><a href="#tuesday" aria-controls="tuesday-meals" role="tab" data-toggle="tab">Tuesday</a></li>
+				    <li role="presentation"><a href="#" aria-controls="wednesday-meals" role="tab" data-toggle="tab">Wednesday</a></li>
+				    <li role="presentation"><a href="#" aria-controls="thursday-meals" role="tab" data-toggle="tab">Thursday</a></li>
+				    <li role="presentation"><a href="#" aria-controls="friday-meals" role="tab" data-toggle="tab">Friday</a></li>
+				    <li role="presentation"><a href="#" aria-controls="saturday-meals" role="tab" data-toggle="tab">Saturday</a></li>
+				    <li role="presentation"><a href="#" aria-controls="sunday-meals" role="tab" data-toggle="tab">Sunday</a></li>
+				</ul>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="monday">
+						<div class="monday"><a href="monday.html"></a>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="tuesday">
+						<div class="tuesday"><a href="tuesday.html"></a>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="wednesday">123</div>
+					<div role="tabpanel" class="tab-pane fade" id="Thursday">...</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-lg-3" style="background-color:white">
+			<p>Something else goes here</p>
+		</div>
+	</div>
+
+</div>
+</div>
+
+</body>
+</html>
+
+
+<script>
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+</script>
