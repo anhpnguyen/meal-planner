@@ -5,6 +5,8 @@
 
 	 <!-- Latest compiled and minified CSS -->
 	<!-- Latest compiled and minified CSS -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
@@ -13,7 +15,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-	<script type="text/javascript" src="js/content.js"></script>
+	<script type="text/javascript" src="/assets/js/content.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,8 +35,8 @@
 			<div role="tabpanel">
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation"><a href="#monday" aria-controls="monday-meals" role="tab" data-toggle="tab">Monday</a></li>
-					<li role="presentation"><a href="#tuesday" aria-controls="tuesday-meals" role="tab" data-toggle="tab">Tuesday</a></li>
+					<li role="presentation"><a href="#monday" aria-controls="monday" role="tab" data-toggle="tab">Monday</a></li>
+					<li role="presentation"><a href="#tuesday" aria-controls="tuesday" role="tab" data-toggle="tab">Tuesday</a></li>
 				    <li role="presentation"><a href="#" aria-controls="wednesday-meals" role="tab" data-toggle="tab">Wednesday</a></li>
 				    <li role="presentation"><a href="#" aria-controls="thursday-meals" role="tab" data-toggle="tab">Thursday</a></li>
 				    <li role="presentation"><a href="#" aria-controls="friday-meals" role="tab" data-toggle="tab">Friday</a></li>
@@ -43,11 +45,11 @@
 				</ul>
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane fade in active" id="monday">
-						<div class="monday"><a href="monday.html"></a>
+						<div id="monday"><a href="monday.html"></a>
 						</div>
 					</div>
 					<div role="tabpanel" class="tab-pane fade" id="tuesday">
-						<div class="tuesday"><a href="tuesday.html"></a>
+						<div id="tuesday"><a href="tuesday.html"></a>
 						</div>
 					</div>
 					<div role="tabpanel" class="tab-pane fade" id="wednesday">123</div>
@@ -75,4 +77,8 @@ $('#myTab a').click(function (e) {
   $(function () {
     $('#myTab a:last').tab('show')
   })
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // newly activated tab
+  e.relatedTarget // previous active tab
+})
 </script>

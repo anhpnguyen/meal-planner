@@ -4,9 +4,9 @@ $(function(){
 });
 
 function load_monday(){
-	$("#monday").load("./monday.html", function())
+	$(".monday").load("./monday.html", function())
 }
 function load_tuesday(){
-	$("#tuesday").load("./tuesday.html", function())
+	$(".tuesday").load("./tuesday.html", function())
 }
 
