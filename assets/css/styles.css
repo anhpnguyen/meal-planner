@@ -1,0 +1,8 @@
+.col-md-4 img {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+
+}
