@@ -1,12 +1,19 @@
-$(function(){
-	load_monday();
-	load_tuesday();
+$(document).ready(function() {
+$('.nav-tabs a').click(function (e) {
+  e.preventDefault();
+ $(this).tab('show')
+  console.log($(this).html());
+  $('#monday').load('monday.html');
+  $('#tuesday').load('tuesday.html');
+  $('#wednesday').load('wednesday.html');
+  $('#thursday').load('thursday.html');
+  $('#friday').load('friday.html');
 });
-$('.nav-tabs a').click(function(e) {
-	function load_monday(){
-	$("#monday").load("monday.html", function())
-}
-function load_tuesday(){
-	$("#tuesday").load("tuesday.html", function())
-}
 });
+ $(function () {
+    $('#monday a:last').tab('show')
+  })
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // newly activated tab
+  e.relatedTarget // previous active tab
+})
