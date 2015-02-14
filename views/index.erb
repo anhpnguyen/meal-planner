@@ -1,97 +1,45 @@
-<html>
-<head>
-	<title>Incorporate Bootstrap framework</title>
-	<meta charset="utf-8">
 
-	 <!-- Latest compiled and minified CSS -->
-	<!-- Latest compiled and minified CSS -->
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<div class="row">
+<div class="jumbotron">
+	<img src="assets/images/logo.png" alt="logo" class="img-rounded pull-left" height="140" width="140">
+	<h1>Meal Planner</h1>
+	<p>Live healthy</p>
+</div>
+</div>
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-	<script type="text/javascript" src="/assets/js/content.js"></script>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-<body>
-<div class="container">
-	<div class="row">
-	<div class="jumbotron">
-		<img src="assets/images/logo.png" alt="logo" class="img-rounded pull-left" height="140" width="140">
-		<h1>Meal Planner</h1>
-		<p>Live healthy</p>
-	</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-8 col-lg-9" style="background-color:white">
-			<div role="tabpanel">
-				<!-- Nav tabs -->
-				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active"><a href="#monday" aria-controls="monday" role="tab" data-toggle="tab">Monday</a></li>
-					<li role="presentation"><a href="#tuesday" aria-controls="tuesday" role="tab" data-toggle="tab">Tuesday</a></li>
-				    <li role="presentation"><a href="#wednesday" aria-controls="wednesday-meals" role="tab" data-toggle="tab">Wednesday</a></li>
-				    <li role="presentation"><a href="#thursday" aria-controls="thursday-meals" role="tab" data-toggle="tab">Thursday</a></li>
-				    <li role="presentation"><a href="#friday" aria-controls="friday-meals" role="tab" data-toggle="tab">Friday</a></li>
-				</ul>
-				<div class="tab-content">
-					<div role="tabpanel" class="tab-pane fade in active" id="monday">
-						<div id="monday"><a href="monday.html"></a>
-						</div>
+<div class="row">
+	<div class="col-md-8 col-lg-9" style="background-color:white">
+		<div role="tabpanel">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#monday" aria-controls="monday" role="tab" data-toggle="tab">Monday</a></li>
+				<li role="presentation"><a href="#tuesday" aria-controls="tuesday" role="tab" data-toggle="tab">Tuesday</a></li>
+			    <li role="presentation"><a href="#wednesday" aria-controls="wednesday-meals" role="tab" data-toggle="tab">Wednesday</a></li>
+			    <li role="presentation"><a href="#thursday" aria-controls="thursday-meals" role="tab" data-toggle="tab">Thursday</a></li>
+			    <li role="presentation"><a href="#friday" aria-controls="friday-meals" role="tab" data-toggle="tab">Friday</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" id="monday">
+					<div id="monday"><a href="monday.html"></a>
 					</div>
-					<div role="tabpanel" class="tab-pane fade" id="tuesday">
-						<div id="tuesday"><a href="tuesday.html"></a>
-						</div>
-					</div>
-					<div role="tabpanel" class="tab-pane fade" id="wednesday"></div>
-						<div id="wednesday"><a href="wednesday.html"></a>
-						</div>
-					<div role="tabpanel" class="tab-pane fade" id="thursday"></div>
-						<div id="thursday"><a href="thursday.html"></a>
-						</div>
-					<div role="tabpanel" class="tab-pane fade" id="friday"></div>
-						<div id="friday"><a href="friday.html"></a>
-						</div>
 				</div>
+				<div role="tabpanel" class="tab-pane fade" id="tuesday">
+					<div id="tuesday"><a href="tuesday.html"></a>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="wednesday"></div>
+					<div id="wednesday"><a href="wednesday.html"></a>
+					</div>
+				<div role="tabpanel" class="tab-pane fade" id="thursday"></div>
+					<div id="thursday"><a href="thursday.html"></a>
+					</div>
+				<div role="tabpanel" class="tab-pane fade" id="friday"></div>
+					<div id="friday"><a href="friday.html"></a>
+					</div>
 			</div>
 		</div>
-		<div class="col-md-4 col-lg-3" style="background-color:white">
-			<p>This meal planner is ideal for college students who live off campus!</p>
-		</div>
 	</div>
-
+	<div class="col-md-4 col-lg-3" style="background-color:white">
+		<p>This meal planner is ideal for college students who live off campus!</p>
+	</div>
 </div>
-</div>
-
-</body>
-</html>
-
-
-<script>
-$(document).ready(function() {
-$('.nav-tabs a').click(function (e) {
-  e.preventDefault();
- $(this).tab('show')
-  console.log($(this).html());
-  $('#monday').load('monday.html');
-  $('#tuesday').load('tuesday.html');
-  $('#wednesday').load('wednesday.html');
-  $('#thursday').load('thursday.html');
-  $('#friday').load('friday.html');
-});
-});
- $(function () {
-    $('#monday a:last').tab('show')
-  })
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  e.target // newly activated tab
-  e.relatedTarget // previous active tab
-})
-</script>
