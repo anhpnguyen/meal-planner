@@ -3,11 +3,11 @@ $('.nav-tabs a').click(function (e) {
   e.preventDefault();
  $(this).tab('show')
   console.log($(this).html());
-  $('#monday').load('monday.erb');
-  $('#tuesday').load('tuesday.erb');
-  $('#wednesday').load('wednesday.erb');
-  $('#thursday').load('thursday.erb');
-  $('#friday').load('friday.erb');
+  $('#monday').load('monday');
+  $('#tuesday').load('tuesday');
+  $('#wednesday').load('wednesday');
+  $('#thursday').load('thursday');
+  $('#friday').load('friday');
 });
 });
  $(function () {
